@@ -16,6 +16,9 @@
 		5C12EAF323A8E6270059B41D /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12EAF223A8E6270059B41D /* MainTabbarController.swift */; };
 		5C12EAF523A8E85E0059B41D /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12EAF423A8E85E0059B41D /* PhotosCollectionViewController.swift */; };
 		5C12EAF723A944AE0059B41D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12EAF623A944AE0059B41D /* CollectionViewController.swift */; };
+		5C232ED523AA99B0001CD1B7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C232ED423AA99B0001CD1B7 /* NetworkService.swift */; };
+		5C232ED823AAA596001CD1B7 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C232ED723AAA596001CD1B7 /* NetworkDataFetcher.swift */; };
+		5C232EDA23AAA5F5001CD1B7 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C232ED923AAA5F5001CD1B7 /* SearchResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		5C12EAF223A8E6270059B41D /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
 		5C12EAF423A8E85E0059B41D /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		5C12EAF623A944AE0059B41D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		5C232ED423AA99B0001CD1B7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5C232ED723AAA596001CD1B7 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		5C232ED923AAA5F5001CD1B7 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				5C12EADE23A7FE670059B41D /* AppDelegate.swift */,
+				5C232ED623AAA03D001CD1B7 /* Services */,
 				5C12EAF623A944AE0059B41D /* CollectionViewController.swift */,
 				5C12EAF223A8E6270059B41D /* MainTabbarController.swift */,
 				5C12EAF423A8E85E0059B41D /* PhotosCollectionViewController.swift */,
@@ -74,6 +81,24 @@
 				5C12EAEC23A7FE6A0059B41D /* Info.plist */,
 			);
 			path = PhotosLibrary;
+			sourceTree = "<group>";
+		};
+		5C232ED623AAA03D001CD1B7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5C232ED423AA99B0001CD1B7 /* NetworkService.swift */,
+				5C232ED723AAA596001CD1B7 /* NetworkDataFetcher.swift */,
+				5C232EDB23AAA5FF001CD1B7 /* Models */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5C232EDB23AAA5FF001CD1B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C232ED923AAA5F5001CD1B7 /* SearchResults.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,12 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C232ED823AAA596001CD1B7 /* NetworkDataFetcher.swift in Sources */,
 				5C12EAF723A944AE0059B41D /* CollectionViewController.swift in Sources */,
 				5C12EAE323A7FE670059B41D /* ViewController.swift in Sources */,
 				5C12EADF23A7FE670059B41D /* AppDelegate.swift in Sources */,
 				5C12EAF323A8E6270059B41D /* MainTabbarController.swift in Sources */,
 				5C12EAF523A8E85E0059B41D /* PhotosCollectionViewController.swift in Sources */,
 				5C12EAE123A7FE670059B41D /* SceneDelegate.swift in Sources */,
+				5C232EDA23AAA5F5001CD1B7 /* SearchResults.swift in Sources */,
+				5C232ED523AA99B0001CD1B7 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
