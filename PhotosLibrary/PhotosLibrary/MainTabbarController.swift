@@ -14,10 +14,10 @@ class MainTabbarController: UITabBarController{
         
         view.backgroundColor = .gray
         
-        let photosVC =  PhotosCollectionViewController(collectionViewLayout: UICollectionViewLayout())
+        let photosVC =  PhotosCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
         
         
-        viewControllers = [generateNavigationController(rootViewController: photosVC, title: "Photos", image: #imageLiteral(resourceName: "photos")),generateNavigationController(rootViewController: ViewController(), title: "Favourites", image: #imageLiteral(resourceName: "heart")),generateNavigationController(rootViewController: CollectionViewController(collectionViewLayout: UICollectionViewLayout()), title: "Temp", image: #imageLiteral(resourceName: "heart"))]
+        viewControllers = [generateNavigationController(rootViewController: photosVC, title: "Photos", image: #imageLiteral(resourceName: "photos")),generateNavigationController(rootViewController: ViewController(), title: "Favourites", image: #imageLiteral(resourceName: "heart"))]
     }
     
     private func generateNavigationController(rootViewController: UIViewController, title: String, image: UIImage) -> UIViewController {
